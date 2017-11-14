@@ -1,0 +1,186 @@
+html, body {
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F0F3F5;
+}
+
+.bg-blue-6 {
+  background-color: #CEE9F4;
+}
+
+.header {
+    background-color: #4699B7;
+    padding: 20px;
+
+}
+
+.header h1, .header h1 a, .header h1 a:visited, .header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.plus-sign {
+  color: #ffffff;
+}
+
+.top-menu {
+    color: #ffffff;
+    float: right;
+    font-size: 16pt;
+    margin-right: 10px;
+}
+
+.top-menu a {
+    color: #ffffff;
+}
+
+/* home.html */
+
+.navigation-body {
+    margin: 20px 20px 20px 20px;
+}
+
+/* registration.html */
+
+.registration {
+    margin-top: 40px;
+}
+
+/* login */
+.login-fields {
+  margin-top: 20px;
+  word-wrap: break-word;
+}
+
+/* journal */
+.journal-home-title h1 {
+  font-style: italic;
+}
+
+.journal-home-content img {
+  border-radius: 2%;
+}
+
+.journal-container nav {
+  background-color: #EAEBED;
+}
+
+.image-parent {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 100%;
+
+}
+
+.image-inner {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  }
+
+/* journal quotes */
+.journal-home-quote p {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 180%;
+  color: black;
+}
+
+/* journal entry */
+.entry p {
+  font-family: 'Playfair Display', serif;
+  font-style: 18px;
+}
+
+.entry h1 {
+  font-weight: bolder;
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.entry-thumbnail {
+  position: relative;
+}
+
+.entry-thumbnail h2 {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.entry-thumbnail h2 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.quote h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quote p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  text-align: center;
+}
+
+.quote h3{
+  font-family: 'Amatic SC', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.word h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.word h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.word p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.posture-table {
+  display: table;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.posture-changes {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #6DB3BF;
+  color: #FFFFFF;
+  font-weight: bold;
+  height: 100px;
+  width: 100px;
+  line-height: 50px;
+  border-radius: 10%;
+}
+

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mb-3">
+  <div class="row mt-4">
+
+    <div class="entry col-md-8">
+      <h1>{{ entry.actual_date|date:"l d M Y" }}</h1>
+      <p class="mt-2">{{ entry.content|linebreaksbr }}</p>
+    </div>
+
+    <div class="col-md-4 my-auto">
+      {% if entry.image %}
+      <div class="text-center">
+        <img class="img-fluid img-thumbnail" src="{{ entry.image.url }}" alt="image">
+      </div>
+      {% endif %}
+
+      {% if entry.quote_content %}
+      <hr>
+      <div class="quote mt-3">
+        <h2>Quote of the Day</h2>
+        <p>"{{ entry.quote_content }}"</p>
+        {% if entry.quote_author %}
+        <h3>{{ entry.quote_author }}</h3>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if entry.word_of_the_day %}
+      <hr>
+      <div class="word mt-3">
+        <h2>Word of the Day</h2>
+        <p><b>{{ entry.word_of_the_day }} - </b>{{ entry.word_of_the_day_def }}</p>
+      </div>
+      {% endif %}
+
+      {% if entry.posture_changes >= 0 %}
+      <hr>
+      <div class="mx-auto justify-content-center">
+        <div class="posture-table mx-auto justify-content-center">
+          <div class="posture-changes mx-auto">
+            <h2>{{ entry.posture_changes }}</h2>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+
+
+  <hr>
+
+  <a href="{% url 'journal_edit' pk=entry.pk %}">
+    <button class="btn btn-primary">Edit Entry</button>
+  </a>
+</div>
+
+
+{% endblock %}

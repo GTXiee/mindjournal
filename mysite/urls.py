@@ -24,8 +24,8 @@ from django.views.generic.base import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('moodmonitor.urls')),
-    url(r'', include('thoughtdiary.urls')),
+    # url(r'', include('moodmonitor.urls')),
+    # url(r'', include('thoughtdiary.urls')),
     url(r'', include('main.urls')),
     url(r'', include('journal.urls')),
 ]

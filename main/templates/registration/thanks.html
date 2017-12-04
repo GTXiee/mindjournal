@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row mt-2">
+    <div class="thanks mx-auto">
+      <p>Thank you for registering. Please go to the <a href="{% url 'journal_home' %}">home page</a> to get started.</p>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

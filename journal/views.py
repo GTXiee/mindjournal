@@ -31,8 +31,6 @@ def journal_new(request):
                 entry.image = request.FILES['image']
             entry.save()
             return redirect('journal_home')
-        else:
-            return HttpResponse('Form Error')
 
     else:
         form = JournalForm()

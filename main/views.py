@@ -22,7 +22,10 @@ def register(request):
             form.save()
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('home')
+            return redirect('thanks')
     else:
         form = CustomUserCreationForm()
     return render(request, 'registration/register.html', {'form': form})
+
+def thanks(request):
+    return render(request, 'registration/thanks.html')

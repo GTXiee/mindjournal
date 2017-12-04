@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils import timezone
 import uuid
-import os.path
 
 class JournalEntry(models.Model):
 

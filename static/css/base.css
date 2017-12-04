@@ -53,10 +53,20 @@ body {
     margin-top: 40px;
 }
 
+/* thanks */
+.thanks {
+  text-align: center;
+}
+
 /* login */
 .login-fields {
   margin-top: 20px;
   word-wrap: break-word;
+}
+
+/* journal form */
+.error input, .error select {
+  border: 2px red solid;
 }
 
 /* journal */
